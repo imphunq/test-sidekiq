@@ -1,0 +1,9 @@
+<%= form_for @user, method: :post do |f| %>
+  Name:
+  <%= f.text_field :name %>
+  Age:
+  <%= f.text_field :age %>
+  Email:
+  <%= f.text_field :email %>
+  <%= f.submit "Create" %>
+<% end %>

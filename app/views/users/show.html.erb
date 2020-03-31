@@ -1,0 +1,17 @@
+<table border="1" class="show-user">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td><%= @user.name %></td>
+    <td><%= @user.age %></td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <%= form_for @user, method: :patch do |f| %>
+        <%= f.submit "Increase age" %>
+      <% end %>
+    </td>
+  </tr>
+</table>
